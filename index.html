@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantum Consultores — Inicio (Desktop)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#077aac;text-decoration:none}
+a:hover{color:#002395;text-decoration:underline}
+.qbtn{transition:background 220ms cubic-bezier(.22,1,.36,1),transform 140ms;cursor:pointer}
+.qbtn:active{transform:scale(.98)}
+.qbtn-accent:hover{background:#d9551a !important;color:#ffffff !important;text-decoration:none}
+.qbtn-primary:hover{background:#001a73 !important;color:#ffffff !important;text-decoration:none}
+.qbtn-ghost:hover{background:rgba(255,255,255,.12) !important;color:#ffffff !important;text-decoration:none}
+.qcard{transition:transform 220ms cubic-bezier(.22,1,.36,1),box-shadow 220ms}
+.qcard:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,35,69,.12) !important}
+.qnav a{color:#2b2f36}
+.qnav a:hover{color:#002395;text-decoration:none}
+.qdd{position:relative;display:flex;align-items:center;height:78px}
+.qdd-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);opacity:0;visibility:hidden;transition:opacity 220ms cubic-bezier(.22,1,.36,1),transform 220ms cubic-bezier(.22,1,.36,1),visibility 220ms;z-index:60}
+.qdd:hover .qdd-panel,.qdd:focus-within .qdd-panel{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.qdd:hover .qdd-chev,.qdd:focus-within .qdd-chev{transform:rotate(180deg)}
+.qdd-chev{display:flex;transition:transform 220ms}
+.qmi{color:#2b2f36 !important;transition:background 140ms}
+.qmi:hover{background:#f2f7fd;text-decoration:none !important;color:#002395 !important}
+.qfoot a{color:#b9c6d6}
+.qfoot a:hover{color:#ffffff}
+.qlink{color:#002395 !important;font-weight:600}
+.qlink:hover{color:#ff742e !important;text-decoration:none}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid rgba(11,155,215,.55);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+
+</head>
+<body>
+
+
+
+<div style="font-family: Poppins, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #1a1d22; background: #ffffff">
+
+<!-- HEADER -->
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #e1e4e8">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="#" aria-label="Quantum Consultores — inicio" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: 176px; height: 36px; border: 1.5px dashed #c3c8ce; border-radius: 8px; font: 600 11px/1 Montserrat, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #5a616b">Logo QC (archivo)</a>
+<nav class="qnav" aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 26px; font: 600 14.5px/1 Montserrat, sans-serif">
+<a href="#" aria-current="page" style="display: flex; align-items: center; height: 78px; color: #002395; box-shadow: inset 0 -3px 0 #ff742e">Inicio</a>
+<div class="qdd">
+<button type="button" aria-haspopup="true" style="display: flex; align-items: center; gap: 6px; height: 78px; padding: 0; border: 0; background: transparent; cursor: pointer; font: 600 14.5px/1 Montserrat, sans-serif; color: #2b2f36">Quiénes Somos<span class="qdd-chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<div class="qdd-panel" style="width: 260px; padding: 10px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 18px 48px rgba(0,35,69,.16); display: flex; flex-direction: column; gap: 2px">
+<a href="#" class="qmi" style="display: flex; flex-direction: column; justify-content: center; gap: 4px; min-height: 56px; padding: 8px 14px; border-radius: 12px; font: 600 14.5px/1.2 Montserrat, sans-serif">Sobre Nosotros<span style="font: 400 13px/1.3 Poppins, sans-serif; color: #5a616b">Propósito, misión y valores</span></a>
+<a href="#" class="qmi" style="display: flex; flex-direction: column; justify-content: center; gap: 4px; min-height: 56px; padding: 8px 14px; border-radius: 12px; font: 600 14.5px/1.2 Montserrat, sans-serif">Staff<span style="font: 400 13px/1.3 Poppins, sans-serif; color: #5a616b">Nuestro equipo senior</span></a>
+</div>
+</div>
+<div class="qdd">
+<button type="button" aria-haspopup="true" style="display: flex; align-items: center; gap: 6px; height: 78px; padding: 0; border: 0; background: transparent; cursor: pointer; font: 600 14.5px/1 Montserrat, sans-serif; color: #2b2f36">Qué Hacemos<span class="qdd-chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<div class="qdd-panel" style="width: 640px; padding: 18px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 22px; box-shadow: 0 18px 48px rgba(0,35,69,.16); display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px">
+<a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>Asesoría y Auditoría Tributaria</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h8"></path></svg></span>Servicios Contables y de Planillas</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg></span>Asesoría Legal</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg></span>Quantum Tech</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg></span>Auditoría Financiera</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg></span>Consultoría en NIIF</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></span>Capacitaciones In-House</a><a href="#" class="qmi" style="display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 12px; border-radius: 12px; font: 600 14.5px/1.3 Montserrat, sans-serif"><span style="flex: 0 0 40px; height: 40px; border-radius: 11px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>Otros Servicios</a>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px; border-radius: 14px; background: linear-gradient(120deg, #002345 0%, #002395 100%)">
+<span style="font: 500 14px/1.4 Poppins, sans-serif; color: #c9d5e6">¿No sabes por dónde empezar?</span>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; font: 600 14px/1 Montserrat, sans-serif; color: #ff9a63">Agenda un diagnóstico <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+</div>
+</div>
+<a href="#">Clientes</a>
+<a href="#">Boletines</a>
+<a href="#">Blog</a>
+<a href="#">Contáctanos</a>
+</nav>
+<a href="#" class="qbtn qbtn-accent" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 9px; min-height: 46px; padding: 0 22px; border-radius: 10px; background: #ff742e; color: #ffffff; font: 600 14.5px/1 Montserrat, sans-serif; box-shadow: 0 8px 20px rgba(255,116,46,.32)">Trabaja con Nosotros</a>
+</div>
+</header>
+
+<!-- HERO SLIDER -->
+
+
+<!-- CLIENTES -->
+<section aria-roledescription="carrusel" aria-label="Destacados" style="position: relative; overflow: hidden; background: linear-gradient(150deg,#002345 0%,#002a78 60%,#002395 100%)">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.14) 1.6px, transparent 1.6px); background-size: 26px 26px; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 55%, transparent 100%)"></div>
+<div aria-hidden="true" style="position: absolute; right: -60px; bottom: -60px; width: 340px; height: 340px; background: radial-gradient(closest-side, rgba(11,155,215,.30), transparent)"></div>
+
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 64px 40px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+
+<!-- left: image -->
+<div style="flex: 1 1 480px; min-width: 0; position: relative">
+<div aria-hidden="true" style="position: absolute; top: -22px; right: -18px; width: 120px; height: 120px; z-index: 2">
+<div style="position: absolute; top: 0; right: 30px; width: 46px; height: 46px; background: #0b9bd7; transform: rotate(45deg); border-radius: 4px"></div>
+<div style="position: absolute; top: 40px; right: 0; width: 30px; height: 30px; background: #4f8fd6; transform: rotate(45deg); border-radius: 3px"></div>
+<div style="position: absolute; top: 58px; right: 56px; width: 22px; height: 22px; background: #ff742e; transform: rotate(45deg); border-radius: 3px"></div>
+</div>
+<div style="position: relative; height: 520px; border-radius: 26px; overflow: hidden; border: 4px solid rgba(255,255,255,.16); box-shadow: 0 18px 48px rgba(0,0,0,.25)">
+
+<div style="position: absolute; inset: 0; background: linear-gradient(160deg, #4f8fd6 0%, #1d4e82 55%, #002345 100%); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.75); font: 500 14px/1.4 Poppins, sans-serif; text-align: center; padding: 40px">Fotografía: socio de Quantum en reunión con cliente<br>(reemplazar · 1200×1040 px)</div>
+
+
+
+<div style="position: absolute; inset: 0; background: linear-gradient(160deg, rgba(0,35,69,0) 40%, rgba(0,35,149,.45) 100%)"></div>
+<div style="position: absolute; left: 24px; bottom: 24px; display: flex; align-items: center; gap: 14px; padding: 14px 20px 14px 14px; border-radius: 14px; background: rgba(255,255,255,.92); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 8px 24px rgba(0,35,69,.18)">
+<div style="width: 44px; height: 44px; border-radius: 12px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font: 800 20px/1 Montserrat, sans-serif; color: #002345">+20 años</span>
+<span style="font: 400 13px/1.3 Poppins, sans-serif; color: #3f444c">anticipando riesgos tributarios</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- right: text -->
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 26px; color: #ffffff">
+
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #ff9a63">Consultoría tributaria · Auditoría preventiva</span>
+<h1 style="margin: 0; font: 700 58px/1.06 Montserrat, sans-serif; letter-spacing: -.01em; text-wrap: balance">La mejor defensa tributaria es la <span style="color: #ff742e">prevención</span>.</h1>
+<p style="margin: 0; max-width: 520px; font: 400 18px/1.6 Poppins, sans-serif; color: #c9d5e6">Identificamos riesgos antes de que se conviertan en reparos, sanciones o contingencias para tu empresa.</p>
+</div>
+
+
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#contacto" class="qbtn qbtn-accent" style="display: inline-flex; align-items: center; gap: 10px; min-height: 54px; padding: 0 28px; border-radius: 10px; background: #ff742e; color: #ffffff; font: 600 16px/1 Montserrat, sans-serif; box-shadow: 0 8px 20px rgba(255,116,46,.32)">Agenda un diagnóstico <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a href="#servicios" class="qbtn qbtn-ghost" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 26px; border-radius: 10px; color: #ffffff; font: 600 16px/1 Montserrat, sans-serif; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.5)">Ver servicios</a>
+</div>
+
+<!-- slider controls -->
+<div style="display: flex; align-items: flex-end; gap: 24px; margin-top: 18px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.14)">
+<div style="flex: 1 1 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">
+
+<button type="button" aria-label="Ir a la diapositiva 01" style="all: unset; cursor: pointer; display: flex; flex-direction: column; gap: 10px; min-height: 44px; justify-content: flex-end">
+<span style="font: 600 13px/1.2 Montserrat, sans-serif; color: #ffffff">01 · Prevención</span>
+<span style="display: block; height: 3px; border-radius: 3px; background: #ff742e"></span>
+</button>
+
+<button type="button" aria-label="Ir a la diapositiva 02" style="all: unset; cursor: pointer; display: flex; flex-direction: column; gap: 10px; min-height: 44px; justify-content: flex-end">
+<span style="font: 600 13px/1.2 Montserrat, sans-serif; color: #9fb1c9">02 · Fiscalización</span>
+<span style="display: block; height: 3px; border-radius: 3px; background: rgba(255,255,255,.22)"></span>
+</button>
+
+<button type="button" aria-label="Ir a la diapositiva 03" style="all: unset; cursor: pointer; display: flex; flex-direction: column; gap: 10px; min-height: 44px; justify-content: flex-end">
+<span style="font: 600 13px/1.2 Montserrat, sans-serif; color: #9fb1c9">03 · Equipo senior</span>
+<span style="display: block; height: 3px; border-radius: 3px; background: rgba(255,255,255,.22)"></span>
+</button>
+
+</div>
+<div style="display: flex; gap: 10px">
+<button type="button" aria-label="Anterior" class="qbtn qbtn-ghost" style="width: 46px; height: 46px; border: 0; border-radius: 12px; background: transparent; color: #ffffff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.4); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg></button>
+<button type="button" aria-label="Siguiente" class="qbtn" style="width: 46px; height: 46px; border: 0; border-radius: 12px; background: #ffffff; color: #002395; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-label="Clientes" style="background: #ffffff; border-bottom: 1px solid #eef0f3">
+<div style="max-width: 1280px; margin: 0 auto; padding: 48px 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 28px 48px">
+<p style="flex: 0 0 220px; margin: 0; font: 600 15px/1.45 Montserrat, sans-serif; color: #3f444c">Empresas que confían su prevención a <span style="color: #002395">Quantum</span></p>
+<div style="flex: 1 1 600px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 16px">
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+<div style="height: 64px; border-radius: 12px; background: #f7f8fa; display: flex; align-items: center; justify-content: center; font: 600 12px/1 Montserrat, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #5a616b">Logo cliente</div>
+</div>
+</div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" aria-labelledby="blog-t" style="background: #f7f8fa">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 40px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 620px">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #d9551a">Blog y noticias</span>
+<h2 id="blog-t" style="margin: 0; font: 700 38px/1.15 Montserrat, sans-serif; color: #002345; letter-spacing: -.01em; text-wrap: balance">Análisis para decidir siempre un paso adelante</h2>
+</div>
+<a href="#" class="qlink" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 600 15px/1 Montserrat, sans-serif">Ver todo el blog <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 28px">
+<!-- featured -->
+<article class="qcard" style="flex: 1.25 1 520px; min-width: 0; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,35,69,.08); display: flex; flex-direction: column">
+<div style="position: relative; height: 300px; background: linear-gradient(150deg, #002345, #002395); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.75); font: 500 13px/1.4 Poppins, sans-serif">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: repeating-linear-gradient(115deg, rgba(255,116,46,.9) 0 18px, transparent 18px 36px); -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 22%); mask-image: linear-gradient(90deg, #000 0%, transparent 22%)"></div>
+Imagen destacada del artículo (reemplazar)
+<span style="position: absolute; top: 20px; left: 20px; padding: 8px 15px; border-radius: 999px; background: #ff742e; color: #ffffff; font: 700 12px/1 Montserrat, sans-serif; letter-spacing: .06em; text-transform: uppercase">Fiscalización</span>
+</div>
+<div style="padding: 30px 32px 32px; display: flex; flex-direction: column; gap: 14px; flex: 1">
+<span style="font: 500 13px/1 Poppins, sans-serif; color: #5a616b">[Fecha] · Equipo Quantum</span>
+<h3 style="margin: 0; font: 700 26px/1.22 Montserrat, sans-serif; color: #002345; text-wrap: balance"><a href="#" style="color: inherit">Fiscalización SUNAT 2026: nuevas facultades y riesgos reales para tu empresa</a></h3>
+<p style="margin: 0; font: 400 16px/1.65 Poppins, sans-serif; color: #5a616b">Qué cambia en los procedimientos de fiscalización, qué documentación revisar hoy y cómo evitar que una observación se convierta en reparo.</p>
+<a href="#" class="qlink" style="margin-top: auto; padding-top: 8px; display: inline-flex; align-items: center; gap: 8px; font: 600 15px/1 Montserrat, sans-serif">Leer artículo <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+</article>
+
+<!-- list -->
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<article class="qcard" style="background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; padding: 16px; box-shadow: 0 2px 8px rgba(0,35,69,.08); display: flex; gap: 18px; align-items: center">
+<div style="flex: 0 0 112px; height: 112px; border-radius: 12px; background: linear-gradient(150deg, #1d4e82, #0b9bd7)"></div>
+<div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+<span style="font: 700 11.5px/1 Montserrat, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #077aac">NIIF</span>
+<h3 style="margin: 0; font: 700 17px/1.32 Montserrat, sans-serif; color: #002345"><a href="#" style="color: inherit">Cierre contable: errores NIIF frecuentes que generan contingencias</a></h3>
+<span style="font: 400 13px/1 Poppins, sans-serif; color: #5a616b">[Fecha]</span>
+</div>
+</article>
+<article class="qcard" style="background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; padding: 16px; box-shadow: 0 2px 8px rgba(0,35,69,.08); display: flex; gap: 18px; align-items: center">
+<div style="flex: 0 0 112px; height: 112px; border-radius: 12px; background: linear-gradient(150deg, #002345, #2563b4)"></div>
+<div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+<span style="font: 700 11.5px/1 Montserrat, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #077aac">Defensa tributaria</span>
+<h3 style="margin: 0; font: 700 17px/1.32 Montserrat, sans-serif; color: #002345"><a href="#" style="color: inherit">Cómo responder un requerimiento de SUNAT sin abrir nuevas contingencias</a></h3>
+<span style="font: 400 13px/1 Poppins, sans-serif; color: #5a616b">[Fecha]</span>
+</div>
+</article>
+<article class="qcard" style="background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; padding: 16px; box-shadow: 0 2px 8px rgba(0,35,69,.08); display: flex; gap: 18px; align-items: center">
+<div style="flex: 0 0 112px; height: 112px; border-radius: 12px; background: linear-gradient(150deg, #2563b4, #8db9e6)"></div>
+<div style="display: flex; flex-direction: column; gap: 8px; min-width: 0">
+<span style="font: 700 11.5px/1 Montserrat, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #077aac">Tecnología</span>
+<h3 style="margin: 0; font: 700 17px/1.32 Montserrat, sans-serif; color: #002345"><a href="#" style="color: inherit">Inteligencia artificial aplicada al control tributario preventivo</a></h3>
+<span style="font: 400 13px/1 Poppins, sans-serif; color: #5a616b">[Fecha]</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" aria-labelledby="serv-t" style="background: #ffffff">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 40px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 22px; align-self: flex-start">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #d9551a">Servicios</span>
+<h2 id="serv-t" style="margin: 0; font: 700 38px/1.15 Montserrat, sans-serif; color: #002345; letter-spacing: -.01em; text-wrap: balance">Un enfoque integral para anticipar cada riesgo</h2>
+<p style="margin: 0; font: 400 16.5px/1.65 Poppins, sans-serif; color: #5a616b">Combinamos más de 20 años de dominio de SUNAT con un equipo multidisciplinario para proteger tu operación y convertir el cumplimiento en ventaja.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 6px 0">
+<div style="display: flex; align-items: center; gap: 12px; font: 500 15px/1.4 Poppins, sans-serif; color: #2b2f36"><span style="flex: 0 0 30px; height: 30px; border-radius: 9px; background: #ff742e; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Enfoque preventivo, no reactivo</div>
+<div style="display: flex; align-items: center; gap: 12px; font: 500 15px/1.4 Poppins, sans-serif; color: #2b2f36"><span style="flex: 0 0 30px; height: 30px; border-radius: 9px; background: #ff742e; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Atención boutique y personalizada</div>
+<div style="display: flex; align-items: center; gap: 12px; font: 500 15px/1.4 Poppins, sans-serif; color: #2b2f36"><span style="flex: 0 0 30px; height: 30px; border-radius: 9px; background: #ff742e; color: #ffffff; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Tecnología e inteligencia artificial aplicada</div>
+</div>
+<a href="#" class="qbtn qbtn-primary" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 10px; background: #002395; color: #ffffff; font: 600 15px/1 Montserrat, sans-serif; box-shadow: 0 12px 30px rgba(0,35,149,.28)">Ver todos los servicios <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+
+<div style="flex: 2 1 640px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px">
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); color: inherit; text-decoration: none">
+<span aria-hidden="true" style="position: absolute; top: 22px; right: 26px; font: 800 40px/1 Montserrat, sans-serif; color: #eef0f3">01</span>
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg></span>
+<span style="font: 700 19px/1.3 Montserrat, sans-serif; color: #002345">Consultoría tributaria</span>
+<span style="font: 400 15px/1.6 Poppins, sans-serif; color: #5a616b">Planeamiento y asesoría permanente para cumplir con certeza y optimizar tu carga fiscal.</span>
+</a>
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); color: inherit; text-decoration: none">
+<span aria-hidden="true" style="position: absolute; top: 22px; right: 26px; font: 800 40px/1 Montserrat, sans-serif; color: #eef0f3">02</span>
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+<span style="font: 700 19px/1.3 Montserrat, sans-serif; color: #002345">Auditoría preventiva</span>
+<span style="font: 400 15px/1.6 Poppins, sans-serif; color: #5a616b">Revisamos tu empresa con la mirada de SUNAT para detectar riesgos antes de una fiscalización.</span>
+</a>
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); color: inherit; text-decoration: none">
+<span aria-hidden="true" style="position: absolute; top: 22px; right: 26px; font: 800 40px/1 Montserrat, sans-serif; color: #eef0f3">03</span>
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="m9 15 2 2 4-4"></path></svg></span>
+<span style="font: 700 19px/1.3 Montserrat, sans-serif; color: #002345">Defensa tributaria</span>
+<span style="font: 400 15px/1.6 Poppins, sans-serif; color: #5a616b">Acompañamiento técnico en fiscalizaciones, reclamaciones y apelaciones ante SUNAT y el Tribunal Fiscal.</span>
+</a>
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); color: inherit; text-decoration: none">
+<span aria-hidden="true" style="position: absolute; top: 22px; right: 26px; font: 800 40px/1 Montserrat, sans-serif; color: #eef0f3">04</span>
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg></span>
+<span style="font: 700 19px/1.3 Montserrat, sans-serif; color: #002345">Asesoría NIIF</span>
+<span style="font: 400 15px/1.6 Poppins, sans-serif; color: #5a616b">Implementación y revisión de estados financieros bajo NIIF, con impacto tributario medido.</span>
+</a>
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); color: inherit; text-decoration: none">
+<span aria-hidden="true" style="position: absolute; top: 22px; right: 26px; font: 800 40px/1 Montserrat, sans-serif; color: #eef0f3">05</span>
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #e3eefb; color: #002395; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg></span>
+<span style="font: 700 19px/1.3 Montserrat, sans-serif; color: #002345">Gestión contable</span>
+<span style="font: 400 15px/1.6 Poppins, sans-serif; color: #5a616b">Contabilidad y outsourcing con control de calidad senior y reportes para decidir a tiempo.</span>
+</a>
+<a href="#" class="qcard" style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 30px 28px; background: linear-gradient(150deg, #002345 0%, #002395 100%); border: 1px solid #002395; border-radius: 18px; box-shadow: 0 12px 30px rgba(0,35,149,.28); color: #ffffff; text-decoration: none; overflow: hidden">
+<span aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.18) 1.5px, transparent 1.5px); background-size: 22px 22px; -webkit-mask-image: linear-gradient(200deg, #000, transparent 60%); mask-image: linear-gradient(200deg, #000, transparent 60%)"></span>
+<span style="position: relative; width: 52px; height: 52px; border-radius: 14px; background: rgba(255,255,255,.12); color: #ffffff; display: flex; align-items: center; justify-content: center; margin-bottom: 8px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
+<span style="position: relative; font: 700 19px/1.3 Montserrat, sans-serif">Diagnóstico tributario</span>
+<span style="position: relative; font: 400 15px/1.6 Poppins, sans-serif; color: #c9d5e6">Una primera revisión de tu situación fiscal para saber dónde están tus riesgos hoy.</span>
+<span style="position: relative; margin-top: 4px; display: inline-flex; align-items: center; gap: 8px; font: 600 15px/1 Montserrat, sans-serif; color: #ff9a63">Solicitar diagnóstico <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- LOGROS -->
+<section aria-labelledby="log-t" style="background: #ffffff">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 40px 96px">
+<div style="position: relative; overflow: hidden; border-radius: 26px; padding: 64px 56px; background: linear-gradient(140deg, #002345 0%, #002a78 55%, #002395 100%); color: #ffffff; display: flex; flex-direction: column; gap: 48px; box-shadow: 0 18px 48px rgba(0,35,69,.16)">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.12) 1.5px, transparent 1.5px); background-size: 26px 26px; -webkit-mask-image: linear-gradient(200deg, #000 0%, transparent 50%); mask-image: linear-gradient(200deg, #000 0%, transparent 50%)"></div>
+<div aria-hidden="true" style="position: absolute; top: 40px; right: 56px; width: 120px; height: 100px">
+<div style="position: absolute; top: 0; right: 0; width: 46px; height: 46px; background: #0b9bd7; transform: rotate(45deg); border-radius: 4px"></div>
+<div style="position: absolute; top: 44px; right: 44px; width: 28px; height: 28px; background: #4f8fd6; transform: rotate(45deg); border-radius: 3px"></div>
+<div style="position: absolute; top: 18px; right: 78px; width: 18px; height: 18px; background: #ff742e; transform: rotate(45deg); border-radius: 3px"></div>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #ff9a63">Nuestros logros</span>
+<h2 id="log-t" style="margin: 0; font: 700 38px/1.15 Montserrat, sans-serif; letter-spacing: -.01em; text-wrap: balance">Dos décadas de resultados que respaldan la prevención</h2>
+</div>
+<div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 32px 0; margin: 0 -28px">
+<div style="padding: 0 28px; display: flex; flex-direction: column; gap: 10px"><span style="font: 800 46px/1 Montserrat, sans-serif; color: #ffffff; letter-spacing: -.01em">+20<span style="color: #ff742e"> años</span></span><span style="font: 400 15px/1.45 Poppins, sans-serif; color: #c9d5e6">Anticipando riesgos tributarios para empresas peruanas</span></div>
+<div style="border-left: 1px solid rgba(255,255,255,.14); padding: 0 28px; display: flex; flex-direction: column; gap: 10px"><span style="font: 800 46px/1 Montserrat, sans-serif; color: #ffffff; letter-spacing: -.01em">[000]<span style="color: #ff742e">+</span></span><span style="font: 400 15px/1.45 Poppins, sans-serif; color: #c9d5e6">Empresas asesoradas a nivel nacional e internacional</span></div>
+<div style="border-left: 1px solid rgba(255,255,255,.14); padding: 0 28px; display: flex; flex-direction: column; gap: 10px"><span style="font: 800 46px/1 Montserrat, sans-serif; color: #ffffff; letter-spacing: -.01em">[00]<span style="color: #ff742e">+</span></span><span style="font: 400 15px/1.45 Poppins, sans-serif; color: #c9d5e6">Fiscalizaciones SUNAT acompañadas</span></div>
+<div style="border-left: 1px solid rgba(255,255,255,.14); padding: 0 28px; display: flex; flex-direction: column; gap: 10px"><span style="font: 800 46px/1 Montserrat, sans-serif; color: #ffffff; letter-spacing: -.01em">[00]<span style="color: #ff742e">%</span></span><span style="font: 400 15px/1.45 Poppins, sans-serif; color: #c9d5e6">Clientes que renuevan con nosotros cada año</span></div>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14)">
+<span style="font: 600 14px/1.4 Montserrat, sans-serif; color: #c9d5e6">Experiencia multisectorial</span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px"><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Industria</span><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Servicios</span><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Comercio</span><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Educación</span><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Salud</span><span style="padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); font: 500 14px/1 Poppins, sans-serif; color: #ffffff">Tecnología</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NOVEDADES NORMATIVAS -->
+<section id="normativa" aria-labelledby="norm-t" style="background: linear-gradient(180deg, #ffffff 0%, #fff3ec 100%)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 40px 96px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 620px">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #d9551a">Novedades normativas</span>
+<h2 id="norm-t" style="margin: 0; font: 700 38px/1.15 Montserrat, sans-serif; color: #002345; letter-spacing: -.01em; text-wrap: balance">La normativa cambia. Tú te enteras primero.</h2>
+</div>
+<a href="#" class="qbtn qbtn-primary" style="display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 10px; background: #002395; color: #ffffff; font: 600 15px/1 Montserrat, sans-serif; box-shadow: 0 12px 30px rgba(0,35,149,.28)">Ver todos los boletines <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: stretch">
+<div style="flex: 1.7 1 560px; min-width: 0; background: #ffffff; border: 1px solid #eef0f3; border-radius: 18px; box-shadow: 0 2px 8px rgba(0,35,69,.08); padding: 8px 28px">
+
+<div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 0">
+<div style="flex: 0 0 64px; height: 64px; border-radius: 12px; background: #f2f7fd; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+<span style="font: 800 22px/1 Montserrat, sans-serif; color: #002345">02</span>
+<span style="font: 700 11px/1 Montserrat, sans-serif; letter-spacing: .1em; color: #5a616b">OCT</span>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+<span style="padding: 6px 12px; border-radius: 999px; font: 600 12px/1 Poppins, sans-serif; background:#eaf7fd;color:#05638c">Resolución SUNAT</span>
+<a href="#" style="font: 600 16.5px/1.4 Montserrat, sans-serif; color: #1a1d22">Modificaciones al régimen de detracciones: qué cambia para tu empresa</a>
+</div>
+<a href="#" aria-label="Descargar PDF" class="qlink" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; background: #e3eefb; font: 600 13.5px/1 Montserrat, sans-serif"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>PDF</a>
+</div>
+
+<div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid #eef0f3">
+<div style="flex: 0 0 64px; height: 64px; border-radius: 12px; background: #f2f7fd; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+<span style="font: 800 22px/1 Montserrat, sans-serif; color: #002345">28</span>
+<span style="font: 700 11px/1 Montserrat, sans-serif; letter-spacing: .1em; color: #5a616b">SET</span>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+<span style="padding: 6px 12px; border-radius: 999px; font: 600 12px/1 Poppins, sans-serif; background:#fff3ec;color:#a8420c">Boletín</span>
+<a href="#" style="font: 600 16.5px/1.4 Montserrat, sans-serif; color: #1a1d22">Boletín tributario Quantum — Edición octubre 2026</a>
+</div>
+<a href="#" aria-label="Descargar PDF" class="qlink" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; background: #e3eefb; font: 600 13.5px/1 Montserrat, sans-serif"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>PDF</a>
+</div>
+
+<div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid #eef0f3">
+<div style="flex: 0 0 64px; height: 64px; border-radius: 12px; background: #f2f7fd; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+<span style="font: 800 22px/1 Montserrat, sans-serif; color: #002345">24</span>
+<span style="font: 700 11px/1 Montserrat, sans-serif; letter-spacing: .1em; color: #5a616b">SET</span>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+<span style="padding: 6px 12px; border-radius: 999px; font: 600 12px/1 Poppins, sans-serif; background:#e3eefb;color:#002395">Decreto legislativo</span>
+<a href="#" style="font: 600 16.5px/1.4 Montserrat, sans-serif; color: #1a1d22">Cambios en la deducción de gastos para el Impuesto a la Renta</a>
+</div>
+<a href="#" aria-label="Descargar PDF" class="qlink" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; background: #e3eefb; font: 600 13.5px/1 Montserrat, sans-serif"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>PDF</a>
+</div>
+
+<div style="display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid #eef0f3">
+<div style="flex: 0 0 64px; height: 64px; border-radius: 12px; background: #f2f7fd; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+<span style="font: 800 22px/1 Montserrat, sans-serif; color: #002345">17</span>
+<span style="font: 700 11px/1 Montserrat, sans-serif; letter-spacing: .1em; color: #5a616b">SET</span>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+<span style="padding: 6px 12px; border-radius: 999px; font: 600 12px/1 Poppins, sans-serif; background:#eaf7fd;color:#05638c">Resolución SUNAT</span>
+<a href="#" style="font: 600 16.5px/1.4 Montserrat, sans-serif; color: #1a1d22">Cronograma de obligaciones tributarias mensuales 2027</a>
+</div>
+<a href="#" aria-label="Descargar PDF" class="qlink" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; background: #e3eefb; font: 600 13.5px/1 Montserrat, sans-serif"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>PDF</a>
+</div>
+
+</div>
+
+<!-- boletín -->
+<div style="flex: 1 1 340px; min-width: 0; position: relative; overflow: hidden; border-radius: 26px; padding: 38px 34px; background: linear-gradient(150deg, #002345 0%, #002a78 60%, #002395 100%); color: #ffffff; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 18px 48px rgba(0,35,69,.16)">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.16) 1.5px, transparent 1.5px); background-size: 24px 24px; -webkit-mask-image: linear-gradient(210deg, #000 0%, transparent 55%); mask-image: linear-gradient(210deg, #000 0%, transparent 55%)"></div>
+<div aria-hidden="true" style="position: absolute; top: 26px; right: 30px; width: 30px; height: 30px; background: #ff742e; transform: rotate(45deg); border-radius: 4px"></div>
+<div aria-hidden="true" style="position: absolute; top: 54px; right: 62px; width: 18px; height: 18px; background: #0b9bd7; transform: rotate(45deg); border-radius: 3px"></div>
+<span style="position: relative; width: 52px; height: 52px; border-radius: 14px; background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg></span>
+<h3 style="position: relative; margin: 0; font: 700 26px/1.2 Montserrat, sans-serif">Recibe nuestro boletín tributario</h3>
+<p style="position: relative; margin: 0; font: 400 15.5px/1.6 Poppins, sans-serif; color: #c9d5e6">Alertas normativas y análisis práctico de nuestros especialistas, directo a tu correo.</p>
+<div style="position: relative; display: flex; flex-direction: column; gap: 8px; margin-top: 4px">
+<label for="nl-mail" style="font: 600 12.5px/1 Poppins, sans-serif; color: #ffffff">Correo corporativo</label>
+<input id="nl-mail" type="email" placeholder="nombre@tuempresa.com" style="box-sizing: border-box; width: 100%; min-height: 50px; padding: 0 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.25); background: rgba(255,255,255,.96); font: 400 15px/1.3 Poppins, sans-serif; color: #1a1d22">
+</div>
+<button type="button" class="qbtn qbtn-accent" style="position: relative; min-height: 52px; border: 0; border-radius: 10px; background: #ff742e; color: #ffffff; font: 600 15.5px/1 Montserrat, sans-serif; box-shadow: 0 8px 20px rgba(255,116,46,.32)">Suscribirme</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section aria-labelledby="test-t" style="background: #ffffff">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 40px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 620px">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #d9551a">Testimonios</span>
+<h2 id="test-t" style="margin: 0; font: 700 38px/1.15 Montserrat, sans-serif; color: #002345; letter-spacing: -.01em; text-wrap: balance">La tranquilidad de nuestros clientes habla por nosotros</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; align-items: stretch">
+<figure style="flex: 1.6 1 560px; min-width: 0; margin: 0; position: relative; overflow: hidden; border-radius: 26px; padding: 52px 56px; background: linear-gradient(140deg, #002345 0%, #002395 100%); color: #ffffff; display: flex; flex-direction: column; gap: 26px; box-shadow: 0 12px 30px rgba(0,35,149,.28)">
+<div aria-hidden="true" style="position: absolute; right: -40px; bottom: -40px; width: 220px; height: 220px; border: 1.5px solid rgba(255,255,255,.12); transform: rotate(45deg); border-radius: 18px"></div>
+<span aria-hidden="true" style="font: 800 72px/.6 Montserrat, sans-serif; color: #ff742e; height: 36px">“</span>
+<blockquote style="position: relative; margin: 0; font: 500 23px/1.55 Poppins, sans-serif; text-wrap: pretty">Su enfoque preventivo nos permitió llegar a la fiscalización con la información ordenada y sin sorpresas. Hoy decidimos con mucha más certeza.</blockquote>
+<figcaption style="position: relative; display: flex; align-items: center; gap: 14px; margin-top: auto">
+<span style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(140deg, #0b9bd7, #2563b4); display: flex; align-items: center; justify-content: center; font: 700 16px/1 Montserrat, sans-serif">NC</span>
+<span style="display: flex; flex-direction: column; gap: 5px"><span style="font: 700 16px/1.2 Montserrat, sans-serif">[Nombre del cliente]</span><span style="font: 400 14px/1.3 Poppins, sans-serif; color: #c9d5e6">[Gerente de Finanzas] · [Empresa industrial]</span></span>
+</figcaption>
+</figure>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+
+<button type="button" aria-pressed="true" class="qbtn" style="display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: 18px; text-align: left; border:0;background:#ffffff;box-shadow:0 8px 24px rgba(0,35,69,.12), inset 0 0 0 1.5px #c2dcf3">
+<span style="flex: 0 0 46px; height: 46px; border-radius: 50%; background: linear-gradient(140deg, #002345, #002395); color: #ffffff; display: flex; align-items: center; justify-content: center; font: 700 15px/1 Montserrat, sans-serif">NC</span>
+<span style="display: flex; flex-direction: column; gap: 5px; min-width: 0"><span style="font: 700 15.5px/1.2 Montserrat, sans-serif; color: #002345">[Nombre del cliente]</span><span style="font: 400 13.5px/1.35 Poppins, sans-serif; color: #5a616b">[Gerente de Finanzas] · [Empresa industrial]</span></span>
+<span style="margin-left: auto; width: 10px; height: 10px; transform: rotate(45deg); border-radius: 2px; background: #ff742e"></span>
+</button>
+
+<button type="button" aria-pressed="false" class="qbtn" style="display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: 18px; text-align: left; border:0;background:#f7f8fa;box-shadow:none">
+<span style="flex: 0 0 46px; height: 46px; border-radius: 50%; background: linear-gradient(140deg, #002345, #002395); color: #ffffff; display: flex; align-items: center; justify-content: center; font: 700 15px/1 Montserrat, sans-serif">NC</span>
+<span style="display: flex; flex-direction: column; gap: 5px; min-width: 0"><span style="font: 700 15.5px/1.2 Montserrat, sans-serif; color: #002345">[Nombre del cliente]</span><span style="font: 400 13.5px/1.35 Poppins, sans-serif; color: #5a616b">[Contador General] · [Empresa de servicios]</span></span>
+<span style="margin-left: auto; width: 10px; height: 10px; transform: rotate(45deg); border-radius: 2px; background: #e1e4e8"></span>
+</button>
+
+<button type="button" aria-pressed="false" class="qbtn" style="display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: 18px; text-align: left; border:0;background:#f7f8fa;box-shadow:none">
+<span style="flex: 0 0 46px; height: 46px; border-radius: 50%; background: linear-gradient(140deg, #002345, #002395); color: #ffffff; display: flex; align-items: center; justify-content: center; font: 700 15px/1 Montserrat, sans-serif">NC</span>
+<span style="display: flex; flex-direction: column; gap: 5px; min-width: 0"><span style="font: 700 15.5px/1.2 Montserrat, sans-serif; color: #002345">[Nombre del cliente]</span><span style="font: 400 13.5px/1.35 Poppins, sans-serif; color: #5a616b">[Gerente General] · [Institución educativa]</span></span>
+<span style="margin-left: auto; width: 10px; height: 10px; transform: rotate(45deg); border-radius: 2px; background: #e1e4e8"></span>
+</button>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="qfoot" style="background: #002345; color: #b9c6d6; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.07) 1.5px, transparent 1.5px); background-size: 26px 26px"></div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 72px 40px 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 40px 44px; border-radius: 26px; background: linear-gradient(120deg, #002395 0%, #00306b 100%); box-shadow: 0 18px 48px rgba(0,0,0,.2)">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px">
+<h2 style="margin: 0; font: 700 30px/1.2 Montserrat, sans-serif; color: #ffffff; text-wrap: balance">¿Tu empresa está preparada para una fiscalización?</h2>
+<p style="margin: 0; font: 400 16px/1.6 Poppins, sans-serif; color: #c9d5e6">Conversemos. Un especialista senior revisará tu caso.</p>
+</div>
+<a href="#" class="qbtn qbtn-accent" style="display: inline-flex; align-items: center; gap: 10px; min-height: 54px; padding: 0 28px; border-radius: 10px; background: #ff742e; color: #ffffff; font: 600 16px/1 Montserrat, sans-serif; box-shadow: 0 8px 20px rgba(255,116,46,.32)">Agenda un diagnóstico <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 40px; padding: 64px 0 52px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<a href="#" aria-label="Quantum Consultores — inicio" style="display: flex; align-items: center; justify-content: center; width: 176px; height: 36px; border: 1.5px dashed rgba(255,255,255,.35); border-radius: 8px; font: 600 11px/1 Montserrat, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #ffffff">Logo QC blanco</a>
+<p style="margin: 0; font: 400 14.5px/1.65 Poppins, sans-serif">Consultoría tributaria y auditoría preventiva. Prevención · Perseverancia · Proactividad.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 18px; font: 600 13.5px/1 Montserrat, sans-serif"><a href="#">LinkedIn</a><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a></div>
+</div>
+<nav aria-label="Servicios" style="display: flex; flex-direction: column; gap: 12px; font: 400 14.5px/1.4 Poppins, sans-serif">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px">Servicios</span>
+<a href="#">Consultoría tributaria</a><a href="#">Auditoría preventiva</a><a href="#">Defensa tributaria</a><a href="#">Asesoría NIIF</a><a href="#">Gestión contable</a>
+</nav>
+<nav aria-label="La firma" style="display: flex; flex-direction: column; gap: 12px; font: 400 14.5px/1.4 Poppins, sans-serif">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px">La firma</span>
+<a href="#">Nosotros</a><a href="#">Equipo</a><a href="#">Blog</a><a href="#">Novedades normativas</a><a href="#">Escuela de Negocios</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 12px; font: 400 14.5px/1.5 Poppins, sans-serif">
+<span style="font: 700 13px/1 Montserrat, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px">Contacto</span>
+<span>Av. Javier Prado Este N° 488, Piso 9, San Isidro, Lima</span>
+<a href="#">+51 1 442 0372 / 442 0377</a>
+<a href="#">info@quantumconsultores.com</a>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding: 24px 0 30px; border-top: 1px solid rgba(255,255,255,.12); font: 400 13px/1.4 Poppins, sans-serif">
+<span>© 2026 Quantum Consultores. Todos los derechos reservados.</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 22px"><a href="#">Política de privacidad</a><a href="#">Términos de uso</a><a href="#" style="color: #ffffff; font-weight: 600">Libro de Reclamaciones</a></div>
+</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
